@@ -158,6 +158,7 @@ def video_test_simple(args):
             normalizer = mpl.colors.Normalize(vmin=disp_resized_np.min(), vmax=vmax)
             mapper = cm.ScalarMappable(norm=normalizer, cmap='magma')
             colormapped_im = (mapper.to_rgba(disp_resized_np)[:, :, :3] * 255).astype(np.uint8)
+            colormapped_im = cv2.cvtColor(colormapped_im, cv2.COLOR_RGB2BGR)
             end = time.time()
 
             if writer is None:
