@@ -47,7 +47,7 @@ We have also successfully trained models with PyTorch 1.0, and our code is compa
 We also recommend using `pillow-simd` instead of `pillow` for faster image preprocessing in the dataloaders. -->
 
 
-## 🖼️ Prediction for a single image
+## 🖼️ Prediction for a single image or video 
 
 You can predict depth for a single image with:
 ```shell
