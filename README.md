@@ -53,7 +53,11 @@ You can predict depth for a single image with:
 ```shell
 python test_simple.py --image_path assets/test_image.jpg --model_name mono+stereo_640x192
 ```
+You can predict on a video
 
+```shell
+python video_test_simple.py --video_path PATH_TO_VIDEO.mp4 --video_path_output PATH_TO_OUTPUT_VIDEO.avi --model_name mono+stereo_1024x320
+```
 On its first run this will download the `mono+stereo_640x192` pretrained model (99MB) into the `models/` folder.
 We provide the following  options for `--model_name`:
 
