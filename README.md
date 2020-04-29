@@ -53,7 +53,7 @@ You can predict depth for a single image with:
 ```shell
 python test_simple.py --image_path assets/test_image.jpg --model_name mono+stereo_640x192
 ```
-You can predict on a video
+You can predict on a video:
 
 ```shell
 python video_test_simple.py --video_path assets/video_test.mp4 --video_path_output assets/video_test_output.avi --model_name mono+stereo_1024x320
